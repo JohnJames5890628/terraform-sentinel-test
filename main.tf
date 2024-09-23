@@ -1,7 +1,20 @@
+# /* this is our first file
+# created using terraform and
+# god bless you */
+provider "aws"{
+  region = "ap-south-1"
+}
+
+resource "aws_instance" "firstTest"{
+  ami = "ami-08718895af4dfa033"
+  instance_type = "t2.micro"
+}
+
 /* this is our first file
 created using terraform and
 god bless you */
 
+/*
 provider "aws" {  
   region     = "ap-south-1"
 }
@@ -11,6 +24,8 @@ resource "aws_instance" "ourfirst" {
   ami           = "ami-0447a12f28fddb066"
   instance_type = "t2.micro"
 }
+*/
+
 /*
 run
 terraform validate
